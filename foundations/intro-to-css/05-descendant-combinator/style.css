@@ -1,0 +1,20 @@
+div p {
+    color           : red;
+    font-size       : 20px;
+    text-align      : center;
+    background-color: yellow;
+}
+
+/* 
+[div p | .container p | div.container p] {
+    color           : red;
+    font-size       : 20px;
+    text-align      : center;
+    background-color: yellow;
+}
+*/
+
+/* Note: div.container or div is largely sufficient to uniquely select
+those which should be styled.
+ */
+
