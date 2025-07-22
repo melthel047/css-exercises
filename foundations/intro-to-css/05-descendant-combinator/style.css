@@ -6,7 +6,7 @@ div p {
 }
 
 /* 
-[div p | .container p | div.container p] {
+[div p | .container p | div.container p | div .text] {
     color           : red;
     font-size       : 20px;
     text-align      : center;
