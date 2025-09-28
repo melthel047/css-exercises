@@ -8,20 +8,21 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/* Alternative since we only need the font-size cause the
+  font-weight is already set to 800.
+  .small-para {
+    font-size: 14px;
+  }
+*/
+
+.small-para {
+  font-size: 14px;
+  /* font-weight: 800; */
+}
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +30,36 @@ body {
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
+/* Alternative
+  #confirm-button {
+    background: green;
+    color: white;
+    font-weigth: bold;
+  }
+*/
+/* 
+For this one the Order rule is applied because for the
+'Confirm' button so first the confirm button.
+With the 20px font-size get applied to it.
+since the '.button' class and '.confirm' class has the same
+specificity aka precedence therefore the order rule is applied
+for conflicting properties.
+
+*/
+.confirm { 
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+.child.text {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
